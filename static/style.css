@@ -21,6 +21,15 @@ body {
   overflow-y: auto;
 }
 
+img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+}
+
 h1,
 h2 {
   color: #ecf0f1;

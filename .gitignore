@@ -1,2 +1,5 @@
 # ignore all env files
 .env
+
+#ignore all procfile name files
+procfile

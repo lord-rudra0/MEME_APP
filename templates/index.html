@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEME WEB THAKUR</title>
-</head>
-
-<body>
-    <h1> A place where You can get all the memes you want.</h1>
-    <p> You have 30 Second to look at the meme.</p>
-    <p><img src="{{meme_pic}}" alt="Oops ,something went wrong, try again"> </p>
-    <p> Current Subreddit :{{subreddit}} </p>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <title>MEME WEB</title>
+  </head>
+  <body>
+    <!-- Main Content Section -->
+    <section class="main-container">
+      <div class="welcome-text">
+        <h1>Welcome to MEME WEB</h1>
+        <h2>A place where you can get all the memes you want.</h2>
+        <p>You have 30 seconds to look at the meme.</p>
+        <p>Click the button below to get a new meme, or wait for 30 seconds.</p>
+        <button onclick="window.location.reload();">Get New Meme</button>
+      </div>
+      <div class="meme-container">
+        <img src="{{ meme_pic }}" alt="Oops, something went wrong, try again" />
+        <p class="author-info">Current Author: {{ subreddit }}</p>
+      </div>
+    </section>
+  </body>
 </html>

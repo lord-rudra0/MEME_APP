@@ -10,15 +10,17 @@ app = Flask(__name__)
 
 def meme():
     url = os.getenv("meme_url")
-    response = requests.get(url)
-    data = response.json()
-    return data['url']
+    response = json.loads(requests.request("GET", url).text)
+    meme_large = response["preview"][-2]
+    subreddit = response["subreddit"]
+    return meme_large, subreddit
 
 
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    meme_pic, subreddit = meme()
+    return render_template('index.html', meme_pic=meme_pic, subreddit=subreddit)
 
 
 

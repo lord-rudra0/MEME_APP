@@ -1,4 +1,4 @@
-/* Global Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +22,7 @@ h2 {
   font-weight: 700;
 }
 
-/* Main Content Section */
+
 .main-container {
   background-color: #fff;
   width: 100%;
@@ -75,7 +75,7 @@ button:hover {
   background-color: #45a049;
 }
 
-/* Meme Image Section */
+
 .meme-container {
   margin-top: 20px;
 }

@@ -8,13 +8,15 @@
 body {
   background-color: #1e2a36;
   margin: 30px;
-
+  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   height: 100vh;
   color: #ecf0f1;
-
+  flex-direction: column;
   padding: 0 20px;
   overflow-y: auto;
 }
@@ -107,4 +109,15 @@ button:hover {
   color: #ecf0f1;
 
   font-style: italic;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #ecf0f1;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }

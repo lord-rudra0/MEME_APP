@@ -14,14 +14,20 @@
     <section class="main-container">
       <div class="welcome-text">
         <h1>Welcome to MEME WEB</h1>
-        <h2>A place where you can get all the memes you want.</h2>
-        <p>You have 30 seconds to look at the meme.</p>
-        <p>Click the button below to get a new meme, or wait for 30 seconds.</p>
-        <button onclick="window.location.reload();">Get New Meme</button>
+        <h2>Your Ultimate Destination for Memes</h2>
+        <p>Enjoy a fresh meme every 30 seconds.</p>
+        <p>
+          Click the button below to load a new meme, or relax and let us refresh
+          it for you automatically.
+        </p>
+        <button onclick="window.location.reload();">Load New Meme</button>
       </div>
       <div class="meme-container">
-        <img src="{{ meme_pic }}" alt="Oops, something went wrong, try again" />
-        <p class="author-info">Current Author: {{ subreddit }}</p>
+        <img
+          src="{{ meme_pic }}"
+          alt="Sorry, we couldn't fetch the meme. Please try again."
+        />
+        <p class="author-info">Meme Courtesy of: {{ subreddit }}</p>
       </div>
     </section>
   </body>

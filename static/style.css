@@ -7,6 +7,7 @@
 
 body {
   background-color: #1e2a36;
+  margin: 30px;
 
   display: flex;
   justify-content: center;
@@ -27,7 +28,7 @@ h2 {
 
 .main-container {
   background-color: #16a085;
-
+  margin: 20px;
   border: 5px solid #f39c12;
 
   width: 100%;

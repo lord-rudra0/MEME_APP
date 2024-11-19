@@ -22,11 +22,32 @@ body {
 }
 
 img {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
 
+.meme-container {
+  margin-top: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+}
+
+.meme-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 h1,

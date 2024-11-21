@@ -20,4 +20,6 @@ def index():
     return render_template('index.html', meme_pic=meme_pic, subreddit=subreddit)
 if __name__ == '__main__':
     app.run(debug=True)
+    
+    #Posting ur own meme
 

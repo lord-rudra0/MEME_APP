@@ -21,5 +21,6 @@ def index():
 if __name__ == '__main__':
     app.run(debug=True)
     
-    #Posting ur own meme
+    #Posting ur own memes
+    
 
